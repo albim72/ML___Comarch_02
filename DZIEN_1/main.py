@@ -8,3 +8,16 @@ print(parzyste)
 
 cube = list(map(lambda x:x**3,liczba))
 print(cube)
+
+import funkcje.bfunkcje as bf
+
+def witaj(imie):
+    return f'Miło Cię widzieć {imie}'
+
+def osoba(funkcja,*args):
+    return funkcja(*args)
+
+print(osoba(witaj,"Leon"))
+print(bf.konkurs("Anna",78,13))
+
+print(bf.punkty_plus_bonus(78,0.23))
